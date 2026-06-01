@@ -1,0 +1,21 @@
+# Semi-Supervised Learning on MNIST
+
+Comparing semi-supervised learning approaches on MNIST digit classification,
+using a small labelled set and large unlabelled pool.
+
+## Key Result
+Self-training with MLP achieved 7.5% pseudo-label error rate,
+significantly outperforming Label Propagation (89.7% error) on 
+high-dimensional pixel data.
+
+## Methods Compared
+- Self-training with MLP classifier
+- Label Propagation
+
+## Key Finding
+Label Propagation degrades on high-dimensional data (784 pixel features)
+because distance metrics become unreliable in high dimensions.
+Self-training with a strong base classifier handles this effectively.
+
+## Tech
+Python, scikit-learn, NumPy, Matplotlib
